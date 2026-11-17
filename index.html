@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biżuteria z kamieni naturalnych - sklep TIAMO, bo jesteś (podgląd)</title>
+<meta name="description" content="Podgląd nowego sklepu TIAMO: ręcznie robiona biżuteria z kamieni naturalnych i pereł, talizmany, naszyjniki i bransoletki z dedykacją.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#16131A">
+<link rel="icon" type="image/png" href="img/favicon-96.png">
+<link rel="preload" as="image" href="img/hero-m-760.webp" imagesrcset="img/hero-m-540.webp 540w, img/hero-m-760.webp 760w, img/hero-m-960.webp 960w" imagesizes="100vw" media="(max-width:899px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-c-720.webp" imagesrcset="img/hero-c-480.webp 480w, img/hero-c-720.webp 720w, img/hero-c-960.webp 960w" imagesizes="34vw" media="(min-width:900px)" fetchpriority="high">
+<link rel="preload" href="fonts/marcellus-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/manrope-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/manrope-latin-ext.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Marcellus;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/marcellus-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Marcellus;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/marcellus-latin-ext.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--ink:#16131A;--ink2:#2A2530;--rubin:#A3123A;--rubin2:#850E2F;--gold:#B8893B;--gold2:#D9B26A;--gray:#F3F3F5;--line:#E3E1E7;--muted:#58545E;--w:1440px;--g:clamp(16px,4vw,48px);--hdr:64px;--top:34px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font:16px/1.6 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+h1,h2,h3{font-family:Marcellus,Georgia,serif;font-weight:400;line-height:1.15;margin:0}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 var(--g)}
+.top{background:var(--ink);color:#fff;font-size:13px;height:var(--top);display:flex;align-items:center;justify-content:center;gap:28px;padding:0 16px;white-space:nowrap;overflow:hidden}
+.top span+span{position:relative}.top .d{display:none}
+header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.hrow{display:flex;align-items:center;gap:20px;height:var(--hdr)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.brand img{width:40px;height:40px}
+.brand b{font-family:Marcellus,Georgia,serif;font-weight:400;font-size:26px;letter-spacing:.22em;line-height:1}
+nav.main{display:none;gap:4px;margin-left:12px}
+nav.main a{text-decoration:none;font-size:15px;padding:8px 10px;border-radius:4px;color:var(--ink2)}
+nav.main a:hover{color:var(--rubin)}
+nav.main a[aria-current]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--rubin);border-radius:0}
+.tools{margin-left:auto;display:flex;align-items:center;gap:6px}
+.search{display:none;align-items:center;border:1px solid var(--line);border-radius:4px;height:40px;padding:0 12px;width:230px;background:var(--gray)}
+.search input{border:0;background:transparent;font:inherit;font-size:14px;width:100%;outline:0;color:var(--ink)}
+.search:focus-within{border-color:var(--ink)}
+.ibtn{display:inline-flex;align-items:center;gap:8px;background:none;border:0;font:inherit;font-size:14px;color:var(--ink);cursor:pointer;padding:8px;min-height:44px;text-decoration:none}
+.ibtn svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.5}
+.cnt{min-width:20px;height:20px;border-radius:10px;background:var(--rubin);color:#fff;font-size:12px;font-weight:700;display:inline-grid;place-items:center;padding:0 5px;margin-left:-4px}
+.burger{order:-1;margin-left:-8px}
+.burger i{display:block;width:20px;height:1.5px;background:currentColor;box-shadow:0 6px 0 currentColor;margin-bottom:6px}
+.acc{display:none}
+/* hero */
+.hero{position:relative;padding:0;height:calc(100svh - var(--hdr) - var(--top));min-height:540px;max-height:1000px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;background:var(--ink)}
+.hero .ph{position:absolute;inset:0;display:grid;grid-template-columns:1fr}
+.hero .ph picture+picture{display:none}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,19,26,0) 30%,rgba(22,19,26,.55) 58%,rgba(22,19,26,.9) 100%)}
+.htxt{position:relative;z-index:2;padding:0 var(--g) clamp(28px,5vh,64px);max-width:var(--w);margin:0 auto;width:100%}
+.hero h1{font-size:clamp(28px,7.4vw,56px);max-width:15ch;letter-spacing:.005em}
+.hero p.lead{font-size:clamp(15px,4vw,18px);max-width:36ch;margin:12px 0 0;color:#F1EEF3}
+.hcta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;background:var(--rubin);color:#fff;text-decoration:none;font-weight:700;font-size:16px;border:0;border-radius:2px;cursor:pointer;letter-spacing:.01em}
+.btn:hover{background:var(--rubin2)}
+.hnote{font-size:14px;color:#E6E1EA}
+.hnote b{color:#fff;font-weight:700}
+/* sekcje */
+section{padding:clamp(56px,8vw,104px) 0}
+.gray{background:var(--gray)}
+.shead{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:clamp(24px,3vw,40px)}
+.shead h2{font-size:clamp(28px,4.4vw,46px)}
+.shead p{margin:10px 0 0;color:var(--muted);max-width:56ch}
+.more{flex:none;font-weight:700;font-size:15px;text-decoration:none;border:1px solid var(--ink);padding:11px 18px;border-radius:2px}
+.more:hover{background:var(--ink);color:#fff}
+.orn{display:flex;align-items:center;gap:14px;color:var(--gold);max-width:var(--w);margin:0 auto;padding:0 var(--g)}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:var(--line)}
+.orn svg{width:34px;height:34px}
+/* kategorie */
+.kats{display:flex;gap:clamp(14px,2vw,28px);overflow-x:auto;scroll-snap-type:x mandatory;padding:4px var(--g) 8px;margin:0 calc(var(--g)*-1);scrollbar-width:none;cursor:grab}
+.kats::-webkit-scrollbar,.track::-webkit-scrollbar{display:none}
+.kat{flex:0 0 auto;width:clamp(112px,28vw,160px);text-align:center;text-decoration:none;scroll-snap-align:start}
+.medal{position:relative;display:block;aspect-ratio:1;margin-bottom:12px}
+.medal img{position:absolute;inset:9%;width:82%;height:82%;border-radius:50%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.medal .ring{position:absolute;inset:0;width:100%;height:100%;color:var(--gold);overflow:visible}
+.medal .moon{transition:transform .5s cubic-bezier(.2,.7,.2,1);transform-origin:60px 60px}
+.kat:hover .medal img{transform:scale(1.04)}
+.kat:hover .moon{transform:rotate(-14deg)}
+.kat b{display:block;font-family:Marcellus,Georgia,serif;font-weight:400;font-size:18px}
+.kat small{color:var(--muted);font-size:13px}
+/* karty */
+.track{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,calc((100% - 3*24px)/4));gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 14px}
+.card{scroll-snap-align:start;display:flex;flex-direction:column}
+.card .ph{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;background:var(--gray);margin-bottom:14px}
+.card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .45s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.card .ph .alt{opacity:0}.card .ph .alt[hidden]{display:none}
+.card:hover .ph .alt{opacity:1}
+.card:hover .ph img{transform:scale(1.03)}
+.tag{position:absolute;z-index:2;top:10px;left:10px;background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:4px 9px;border-radius:2px}
+.card h3{font-family:Manrope,system-ui,sans-serif;font-weight:600;font-size:15px;line-height:1.35}
+.card h3 a{text-decoration:none}.card h3 a:hover{color:var(--rubin)}
+.card .sub{margin:4px 0 0;color:var(--muted);font-size:13.5px;line-height:1.4}
+.card .rate{margin:6px 0 0;font-size:13px;color:var(--ink2);font-weight:600}
+.buy{margin-top:auto;padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.price{font-weight:800;font-size:17px;white-space:nowrap}
+.add{font:inherit;font-size:14px;font-weight:700;background:#fff;color:var(--ink);border:1px solid var(--ink);min-height:44px;padding:0 14px;border-radius:2px;cursor:pointer}
+.add:hover{background:var(--ink);color:#fff}
+.add.ok{background:var(--rubin);border-color:var(--rubin);color:#fff}
+/* intencje */
+.int{display:grid;gap:clamp(28px,5vw,80px)}
+.int h2{font-size:clamp(28px,4.4vw,46px)}
+.int .txt p{color:var(--muted);margin:14px 0 0;max-width:52ch}
+.ilist{list-style:none;margin:0;padding:0;border-top:1px solid #D6D3DB}
+.ilist a{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid #D6D3DB;text-decoration:none}
+.ilist b{font-family:Marcellus,Georgia,serif;font-weight:400;font-size:clamp(20px,2.4vw,26px)}
+.ilist span{color:var(--muted);font-size:14px;text-align:right}
+.ilist a:hover b{color:var(--rubin)}
+.stones{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.stones a{text-decoration:none;font-size:14px;background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:2px}
+.stones a:hover{border-color:var(--ink)}
+.stones small{color:var(--muted);margin-left:4px}
+/* prezent - mocna sekcja */
+.dark{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.gift{display:grid;gap:clamp(36px,6vw,96px);align-items:center}
+.gmed{position:relative;width:min(100%,560px);aspect-ratio:1;margin:0 auto}
+.gmed img{position:absolute;inset:7%;width:86%;height:86%;border-radius:50%;object-fit:cover}
+.gmed svg{--mf:var(--ink);position:absolute;inset:0;width:100%;height:100%;color:var(--gold2);overflow:visible}
+.gift h2{font-size:clamp(30px,4.6vw,50px);max-width:16ch}
+.gift p{color:#D9D4DE;max-width:52ch;margin:16px 0 0}
+.gift blockquote{margin:26px 0 0;padding:0 0 0 18px;border-left:1px solid var(--gold2);color:#fff;font-size:16px;max-width:52ch}
+.gift blockquote cite{display:block;margin-top:8px;font-style:normal;color:var(--gold2);font-size:14px}
+.okazje{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.okazje a{text-decoration:none;border:1px solid rgba(255,255,255,.35);padding:10px 16px;font-size:15px;border-radius:2px}
+.okazje a:hover{border-color:var(--gold2);color:var(--gold2)}
+/* opinie */
+.ops{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(270px,calc((100% - 2*24px)/3));gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab}
+.op{scroll-snap-align:start;border-top:2px solid var(--ink);padding-top:20px;margin:0}
+.op .st{font-weight:700;font-size:14px;color:var(--rubin)}
+.op p{margin:10px 0 16px;font-size:16px}
+.op footer{font-size:14px;color:var(--muted)}.op footer b{color:var(--ink)}
+/* dostawa */
+.info{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 20px}
+.info div{border-top:1px solid #D6D3DB;padding-top:16px}
+.info b{display:block;font-family:Marcellus,Georgia,serif;font-weight:400;font-size:clamp(18px,2vw,20px);line-height:1.25}
+.info p{margin:6px 0 0;color:var(--muted);font-size:14.5px}
+.info .v{color:var(--ink);font-weight:800;font-size:17px;margin-top:4px}
+/* o marce */
+.about{display:grid;gap:clamp(28px,5vw,80px);align-items:center}
+.about .im{aspect-ratio:4/5;max-width:520px;width:100%;position:relative}
+.about .im img{width:100%;height:100%;object-fit:cover}
+.about h2{font-size:clamp(28px,4.4vw,46px);max-width:18ch}
+.about p{color:var(--muted);max-width:56ch;margin:16px 0 0}
+.about .sig{color:var(--ink);font-family:Marcellus,Georgia,serif;font-size:22px;margin-top:22px}
+/* stopka */
+footer.site{background:var(--ink);color:#C9C4CE;padding:56px 0 28px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:32px 20px}
+.flogo{grid-column:1/-1}
+.flogo img{width:132px;height:auto}
+footer.site h3{font-family:Manrope,system-ui,sans-serif;font-size:14px;font-weight:700;color:#fff;margin:0 0 10px}
+footer.site ul{list-style:none;margin:0;padding:0}
+footer.site li{margin:0 0 6px}
+footer.site a{text-decoration:none}footer.site a:hover{color:#fff}
+.fbot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:.875em}
+/* koszyk */
+.cart{position:fixed;inset:0;z-index:50;display:none}
+.cart.open{display:block}
+.cart .bg{position:absolute;inset:0;background:rgba(22,19,26,.5)}
+.cart .pan{position:absolute;top:0;right:0;bottom:0;width:min(420px,100%);background:#fff;display:flex;flex-direction:column;padding:20px;animation:sl .3s cubic-bezier(.2,.7,.2,1)}
+@keyframes sl{from{transform:translateX(40px);opacity:0}}
+.cart .hd{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px}
+.cart h2{font-size:26px}
+.x{background:none;border:0;font:inherit;font-size:15px;cursor:pointer;min-height:44px;padding:0 6px;text-decoration:underline}
+.items{list-style:none;margin:0;padding:0;overflow:auto;flex:1}
+.items li{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}
+.items img{width:64px;height:80px;object-fit:cover}
+.items .q{color:var(--muted)}
+.empty{color:var(--muted);padding:24px 0}
+.sum{border-top:1px solid var(--line);padding-top:14px}
+.sum div{display:flex;justify-content:space-between;margin-bottom:6px;font-size:14px;color:var(--muted)}
+.sum .t{color:var(--ink);font-weight:800;font-size:18px}
+.sum .btn{width:100%;margin-top:10px}
+.sum small{display:block;color:var(--muted);margin-top:10px;font-size:13px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 18px;border-radius:2px;font-size:14px;opacity:0;transition:.3s;z-index:60;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.cart.open~.toast{display:none}
+/* menu mobilne */
+.mnav{position:fixed;inset:0;z-index:45;background:#fff;display:none;flex-direction:column;padding:16px var(--g) 24px;overflow:auto}
+.mnav.open{display:flex}
+.mnav .hd{display:flex;justify-content:space-between;align-items:center;height:48px}
+.mnav a.l{display:block;font-family:Marcellus,Georgia,serif;font-size:26px;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line)}
+.mnav a.l[aria-current]{color:var(--rubin)}
+.mnav .search{display:flex;width:100%;margin:12px 0}
+.mnav p{color:var(--muted);font-size:14px;margin-top:20px}
+:focus-visible{outline:2px solid var(--rubin);outline-offset:2px}
+@media (min-width:700px){
+ .grid{grid-template-columns:repeat(3,1fr);gap:40px 24px}
+ .info{grid-template-columns:repeat(4,1fr)}
+ .fgrid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}.flogo{grid-column:auto}
+ .top .d{display:inline}
+}
+@media (min-width:900px){
+ .hero .ph{grid-template-columns:repeat(3,1fr)}
+ .hero .ph picture+picture{display:block}
+ .htxt{margin:0;max-width:33.33vw;padding-left:max(var(--g),calc((100vw - var(--w))/2 + var(--g)));padding-right:28px}
+ .hero h1{font-size:clamp(34px,2.4vw,48px)}
+ .htxt{padding-bottom:clamp(32px,4.5vh,56px)}
+ .hero::after{background:linear-gradient(180deg,rgba(22,19,26,0) 45%,rgba(22,19,26,.5) 70%,rgba(22,19,26,.85) 100%)}
+ .int{grid-template-columns:1fr 1.15fr;align-items:start}
+ .gift{grid-template-columns:1fr 1fr}
+ .about{grid-template-columns:1fr 1fr}
+}
+@media (min-width:1100px){
+ nav.main{display:flex}.burger{display:none}.search{display:flex}.acc{display:inline-flex}
+ .grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (min-width:1800px){:root{--w:1840px}.grid{gap:48px 32px}}
+@media (max-width:420px){.brand b{font-size:22px}.brand img{width:34px;height:34px}.track{grid-auto-columns:72%}.ops{grid-auto-columns:86%}.shead .more{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+<style>
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="medal" viewBox="0 0 120 120"><circle cx="60" cy="60" r="57" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="60" cy="60" r="53.5" fill="none" stroke="currentColor" stroke-width=".7"/><g class="moon"><path d="M95.5 6.5a17 17 0 1 0 15 25.5a13.6 13.6 0 1 1-15-25.5z" fill="var(--mf,#fff)" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></g></symbol>
+</defs></svg>
+<div class="top"><span>Paczkomat InPost 14,50 zł · kurier 16 zł</span><span class="d">BLIK i szybkie płatności online</span><span class="d">Dedykacja do zamówienia</span></div>
+<header>
+<div class="wrap hrow">
+<button class="ibtn burger" type="button" aria-label="Otwórz menu" data-open="mnav"><span><i></i></span>Menu</button>
+<a class="brand" href="#" aria-label="TIAMO - strona główna"><img src="img/mark-96.webp" width="40" height="40" alt=""><b>TIAMO</b></a>
+<nav class="main" aria-label="Kategorie"><a href="#">Nowości</a><a href="#">Talizmany</a><a href="#">Naszyjniki</a><a href="#">Bransoletki</a><a href="#">Kolczyki</a><a href="#">Prezenty</a><a href="#">Dla niego</a><a href="#">O nas</a></nav>
+<div class="tools">
+<label class="search"><span class="sr" hidden>Szukaj</span><input type="search" placeholder="Szukaj: naszyjnik, cytryn, prezent..." aria-label="Szukaj w sklepie"></label>
+<a class="ibtn acc" href="#">Moje konto</a>
+<button class="ibtn" type="button" data-open="cart" aria-label="Koszyk, liczba produktów: 0" id="cbtn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5h14l-1 12H6z"/><path d="M9 8.5C9 5 10.2 3.5 12 3.5S15 5 15 8.5"/><circle cx="12" cy="14.2" r="2.6"/></svg><span class="cnt" id="cnt">0</span></button>
+</div>
+</div>
+</header>
+
+<main>
+<section class="hero" aria-label="Nowa kolekcja">
+<div class="ph"><picture><source media="(min-width:900px)" srcset="img/hero-c-480.webp 480w, img/hero-c-720.webp 720w, img/hero-c-960.webp 960w" sizes="34vw" width="720" height="720"><img src="img/hero-m-760.webp" srcset="img/hero-m-540.webp 540w, img/hero-m-760.webp 760w, img/hero-m-960.webp 960w" sizes="100vw" width="720" height="1000" alt="Naszyjniki z kamieni naturalnych na szyi" fetchpriority="high"></picture><picture><source media="(max-width:899px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACw="><img src="img/hero-b-720.webp" srcset="img/hero-b-480.webp 480w, img/hero-b-720.webp 720w, img/hero-b-960.webp 960w" sizes="34vw" width="720" height="923" alt="" decoding="async"></picture><picture><source media="(max-width:899px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACw="><img src="img/hero-a-720.webp" srcset="img/hero-a-480.webp 480w, img/hero-a-720.webp 720w, img/hero-a-960.webp 960w" sizes="34vw" width="720" height="923" alt="" decoding="async"></picture></div>
+<div class="htxt">
+<h1>Biżuteria z kamieni naturalnych, robiona ręcznie. Tiamo, bo jesteś.</h1>
+<p class="lead">Talizmany, naszyjniki i bransoletki z dedykacją - dla siebie albo dla kogoś, kogo kochasz.</p>
+<div class="hcta"><a class="btn" href="#nowosci">Zobacz nowości</a><span class="hnote">Kolekcja Boginie: <b>bransoletki po 139 zł</b></span></div>
+</div>
+</section>
+
+<section aria-labelledby="kat-h">
+<div class="wrap">
+<div class="shead"><div><h2 id="kat-h">Wybierz biżuterię</h2></div></div>
+<div class="kats" data-drag><a class="kat" href="#"><span class="medal"><img src="img/k-talizmany-200.webp" srcset="img/k-talizmany-200.webp 200w, img/k-talizmany-320.webp 320w" sizes="(min-width:700px) 160px, 28vw" width="200" height="200" alt="" loading="lazy" decoding="async"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></span><b>Talizmany</b><small>93 produkty</small></a>
+<a class="kat" href="#"><span class="medal"><img src="img/k-naszyjniki-200.webp" srcset="img/k-naszyjniki-200.webp 200w, img/k-naszyjniki-320.webp 320w" sizes="(min-width:700px) 160px, 28vw" width="200" height="200" alt="" loading="lazy" decoding="async"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></span><b>Naszyjniki</b><small>78 produktów</small></a>
+<a class="kat" href="#"><span class="medal"><img src="img/k-nitka-200.webp" srcset="img/k-nitka-200.webp 200w, img/k-nitka-320.webp 320w" sizes="(min-width:700px) 160px, 28vw" width="200" height="200" alt="" loading="lazy" decoding="async"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></span><b>Bransoletki</b><small>86 produktów</small></a>
+<a class="kat" href="#"><span class="medal"><img src="img/k-zodiak-200.webp" srcset="img/k-zodiak-200.webp 200w, img/k-zodiak-320.webp 320w" sizes="(min-width:700px) 160px, 28vw" width="200" height="200" alt="" loading="lazy" decoding="async"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></span><b>Zodiakalne</b><small>36 produktów</small></a>
+<a class="kat" href="#"><span class="medal"><img src="img/k-kolczyki-200.webp" srcset="img/k-kolczyki-200.webp 200w, img/k-kolczyki-320.webp 320w" sizes="(min-width:700px) 160px, 28vw" width="200" height="200" alt="" loading="lazy" decoding="async"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></span><b>Kolczyki</b><small>2 produkty</small></a>
+<a class="kat" href="#"><span class="medal"><img src="img/k-meskie-200.webp" srcset="img/k-meskie-200.webp 200w, img/k-meskie-320.webp 320w" sizes="(min-width:700px) 160px, 28vw" width="200" height="200" alt="" loading="lazy" decoding="async"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></span><b>Dla niego</b><small>6 produktów</small></a>
+<a class="kat" href="#"><span class="medal"><img src="img/k-breloki-200.webp" srcset="img/k-breloki-200.webp 200w, img/k-breloki-320.webp 320w" sizes="(min-width:700px) 160px, 28vw" width="200" height="200" alt="" loading="lazy" decoding="async"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></span><b>Breloki</b><small>1 produkt</small></a>
+<a class="kat" href="#"><span class="medal"><img src="img/k-bon-200.webp" srcset="img/k-bon-200.webp 200w, img/k-bon-320.webp 320w" sizes="(min-width:700px) 160px, 28vw" width="200" height="200" alt="" loading="lazy" decoding="async"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></span><b>Bon upominkowy</b><small>dowolna kwota</small></a></div>
+</div>
+</section>
+
+<div class="orn" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#medal"/></svg></div>
+
+<section id="nowosci" aria-labelledby="now-h">
+<div class="wrap">
+<div class="shead"><div><h2 id="now-h">Nowości: kolekcja Boginie</h2><p>Sześć bransoletek-talizmanów, każda z innym kamieniem i kartą z opisem jego znaczenia.</p></div><a class="more" href="#">Cała kolekcja</a></div>
+<div class="track" data-drag><article class="card">
+<a class="ph" href="#"><span class="tag">Nowość</span><img src="img/afrodyta-360.webp" srcset="img/afrodyta-360.webp 360w, img/afrodyta-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka Bogini Afrodyta - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/afrodyta-b-360.webp" data-srcset="img/afrodyta-b-360.webp 360w, img/afrodyta-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka Bogini Afrodyta</a></h3><p class="sub">na miłość i radość, kwarc różowy</p>
+<div class="buy"><span class="price">139,00 zł</span><button class="add" type="button" data-n="Bransoletka Bogini Afrodyta" data-p="139" data-k="afrodyta">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><span class="tag">Nowość</span><img src="img/atena-360.webp" srcset="img/atena-360.webp 360w, img/atena-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka Bogini Atena - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/atena-b-360.webp" data-srcset="img/atena-b-360.webp 360w, img/atena-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka Bogini Atena</a></h3><p class="sub">na spokój i pewność siebie, sodalit</p>
+<div class="buy"><span class="price">139,00 zł</span><button class="add" type="button" data-n="Bransoletka Bogini Atena" data-p="139" data-k="atena">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><span class="tag">Nowość</span><img src="img/demeter-360.webp" srcset="img/demeter-360.webp 360w, img/demeter-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka Bogini Demeter - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/demeter-b-360.webp" data-srcset="img/demeter-b-360.webp 360w, img/demeter-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka Bogini Demeter</a></h3><p class="sub">na sukces i bogactwo, cytryn</p>
+<div class="buy"><span class="price">139,00 zł</span><button class="add" type="button" data-n="Bransoletka Bogini Demeter" data-p="139" data-k="demeter">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><span class="tag">Nowość</span><img src="img/hestia-360.webp" srcset="img/hestia-360.webp 360w, img/hestia-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka Bogini Hestia - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/hestia-b-360.webp" data-srcset="img/hestia-b-360.webp 360w, img/hestia-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka Bogini Hestia</a></h3><p class="sub">na miłość i odwagę, granat</p>
+<div class="buy"><span class="price">139,00 zł</span><button class="add" type="button" data-n="Bransoletka Bogini Hestia" data-p="139" data-k="hestia">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><span class="tag">Nowość</span><img src="img/artemida-360.webp" srcset="img/artemida-360.webp 360w, img/artemida-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka Bogini Artemida - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/artemida-b-360.webp" data-srcset="img/artemida-b-360.webp 360w, img/artemida-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka Bogini Artemida</a></h3><p class="sub">na kreatywność i intuicję, kamień księżycowy</p>
+<div class="buy"><span class="price">139,00 zł</span><button class="add" type="button" data-n="Bransoletka Bogini Artemida" data-p="139" data-k="artemida">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><span class="tag">Nowość</span><img src="img/hera-360.webp" srcset="img/hera-360.webp 360w, img/hera-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka Bogini Hera - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/hera-b-360.webp" data-srcset="img/hera-b-360.webp 360w, img/hera-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka Bogini Hera</a></h3><p class="sub">na ochronę i harmonię, ametyst</p>
+<div class="buy"><span class="price">139,00 zł</span><button class="add" type="button" data-n="Bransoletka Bogini Hera" data-p="139" data-k="hera">Do koszyka</button></div>
+</article></div>
+</div>
+</section>
+
+<section class="gray" aria-labelledby="int-h">
+<div class="wrap int">
+<div class="txt"><h2 id="int-h">Talizman na to, czego potrzebujesz</h2>
+<p>Wierzymy w moc naturalnych kamieni - każdemu przypisuje się inne właściwości. Wybierz intencję albo konkretny kamień, a pokażemy biżuterię, w której go znajdziesz.</p>
+<div class="stones"><a href="#">Kamień księżycowy<small>42</small></a>
+<a href="#">Perły<small>39</small></a>
+<a href="#">Turmalin<small>26</small></a>
+<a href="#">Jadeit<small>23</small></a>
+<a href="#">Cytryn<small>20</small></a>
+<a href="#">Kwarc<small>19</small></a>
+<a href="#">Akwamaryn<small>17</small></a>
+<a href="#">Kryształ górski<small>17</small></a>
+<a href="#">Apatyt<small>13</small></a>
+<a href="#">Granat<small>13</small></a>
+<a href="#">Koral naturalny<small>12</small></a>
+<a href="#">Ametyst<small>9</small></a><a href="#">Wszystkie kamienie</a></div></div>
+<ul class="ilist"><li><a href="#"><b>Na miłość</b><span>kwarc różowy, granat</span></a></li>
+<li><a href="#"><b>Na spokój i pewność siebie</b><span>sodalit, akwamaryn</span></a></li>
+<li><a href="#"><b>Na sukces i bogactwo</b><span>cytryn</span></a></li>
+<li><a href="#"><b>Na ochronę</b><span>czarny turmalin, ametyst</span></a></li>
+<li><a href="#"><b>Na intuicję i kreatywność</b><span>kamień księżycowy</span></a></li></ul>
+</div>
+</section>
+
+<section aria-labelledby="wyb-h">
+<div class="wrap">
+<div class="shead"><div><h2 id="wyb-h">Wybrane z kolekcji</h2><p>Naszyjniki, bransoletki i kolczyki z pozłacanej stali i kamieni naturalnych.</p></div><a class="more" href="#">Wszystkie produkty</a></div>
+<div class="grid"><article class="card">
+<a class="ph" href="#"><img src="img/marbella-360.webp" srcset="img/marbella-360.webp 360w, img/marbella-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Naszyjnik Marbella z żółtym kwiatkiem - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/marbella-b-360.webp" data-srcset="img/marbella-b-360.webp 360w, img/marbella-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Naszyjnik Marbella z żółtym kwiatkiem</a></h3><p class="sub">talizman na radość, sukces i szczęście</p>
+<div class="buy"><span class="price">159,00 zł</span><button class="add" type="button" data-n="Naszyjnik Marbella z żółtym kwiatkiem" data-p="159" data-k="marbella">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><img src="img/tulum-360.webp" srcset="img/tulum-360.webp 360w, img/tulum-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Naszyjnik Tulum z neonowymi kamieniami - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/tulum-b-360.webp" data-srcset="img/tulum-b-360.webp 360w, img/tulum-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Naszyjnik Tulum z neonowymi kamieniami</a></h3><p class="sub">talizman na miłość, spokój i odwagę</p>
+<div class="buy"><span class="price">169,00 zł</span><button class="add" type="button" data-n="Naszyjnik Tulum z neonowymi kamieniami" data-p="169" data-k="tulum">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><img src="img/valentina-360.webp" srcset="img/valentina-360.webp 360w, img/valentina-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Naszyjnik Valentina choker z sercem - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/valentina-b-360.webp" data-srcset="img/valentina-b-360.webp 360w, img/valentina-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Naszyjnik Valentina choker z sercem</a></h3><p class="sub">pozłacana stal szlachetna</p>
+<div class="buy"><span class="price">149,00 zł</span><button class="add" type="button" data-n="Naszyjnik Valentina choker z sercem" data-p="149" data-k="valentina">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><img src="img/lumi-360.webp" srcset="img/lumi-360.webp 360w, img/lumi-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Kolczyki Lumi gwiazdki - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/lumi-b-360.webp" data-srcset="img/lumi-b-360.webp 360w, img/lumi-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Kolczyki Lumi gwiazdki</a></h3><p class="sub">pozłacana stal szlachetna</p>
+<div class="buy"><span class="price">99,00 zł</span><button class="add" type="button" data-n="Kolczyki Lumi gwiazdki" data-p="99" data-k="lumi">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><img src="img/biedronka-360.webp" srcset="img/biedronka-360.webp 360w, img/biedronka-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka Biedronka - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/biedronka-b-360.webp" data-srcset="img/biedronka-b-360.webp 360w, img/biedronka-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka Biedronka</a></h3><p class="sub">czarny turmalin i czerwony spinel</p>
+<div class="buy"><span class="price">119,00 zł</span><button class="add" type="button" data-n="Bransoletka Biedronka" data-p="119" data-k="biedronka">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><img src="img/molly-360.webp" srcset="img/molly-360.webp 360w, img/molly-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka Molly talizman ochronny - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/molly-b-360.webp" data-srcset="img/molly-b-360.webp 360w, img/molly-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka Molly talizman ochronny</a></h3><p class="sub">czarny turmalin i hematyt na gumce</p><p class="rate">5,0 / 5 · 1 opinia</p>
+<div class="buy"><span class="price">139,00 zł</span><button class="add" type="button" data-n="Bransoletka Molly talizman ochronny" data-p="139" data-k="molly">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><img src="img/lew-360.webp" srcset="img/lew-360.webp 360w, img/lew-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Bransoletka zodiakalna grande Lew - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/lew-b-360.webp" data-srcset="img/lew-b-360.webp 360w, img/lew-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Bransoletka zodiakalna grande Lew</a></h3><p class="sub">z granatem</p><p class="rate">5,0 / 5 · 2 opinie</p>
+<div class="buy"><span class="price">129,00 zł</span><button class="add" type="button" data-n="Bransoletka zodiakalna grande Lew" data-p="129" data-k="lew">Do koszyka</button></div>
+</article>
+<article class="card">
+<a class="ph" href="#"><img src="img/goldlove-360.webp" srcset="img/goldlove-360.webp 360w, img/goldlove-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="Czerwona bransoletka Gold Love - zdjęcie produktu" loading="lazy" decoding="async"><img class="alt" data-src="img/goldlove-b-360.webp" data-srcset="img/goldlove-b-360.webp 360w, img/goldlove-b-600.webp 600w" sizes="(min-width:1100px) 300px, (min-width:700px) 30vw, 46vw" width="360" height="450" alt="" loading="lazy" decoding="async" hidden></a>
+<h3><a href="#">Czerwona bransoletka Gold Love</a></h3><p class="sub">z pozłacanym sercem</p><p class="rate">5,0 / 5 · 1 opinia</p>
+<div class="buy"><span class="price">129,00 zł</span><button class="add" type="button" data-n="Czerwona bransoletka Gold Love" data-p="129" data-k="goldlove">Do koszyka</button></div>
+</article></div>
+</div>
+</section>
+
+<section class="dark" aria-labelledby="gift-h">
+<div class="wrap gift">
+<div class="gmed"><img src="img/box-600.webp" srcset="img/box-600.webp 600w, img/box-900.webp 900w" sizes="(min-width:900px) 42vw, 90vw" width="600" height="600" alt="Pudełko jubilerskie i torebka prezentowa z logo Tiamo" loading="lazy" decoding="async"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#medal"/></svg></div>
+<div>
+<h2 id="gift-h">Prezent, który mówi: kocham Cię, bo jesteś</h2>
+<p>Biżuteria przychodzi w pudełku z logo Tiamo, gotowa do wręczenia. Do zamówienia możesz dodać dedykację: wybrać gotową, wpisać własną albo dopisać kilka słów do gotowej.</p>
+<blockquote>„Piękne pudełko, grafika, jakość, detale, no jedno wielkie WOW. To idealny pomysł na prezent.”<cite>Iga, opinia w sklepie, 2025</cite></blockquote>
+<div class="okazje"><a href="#">Na urodziny</a>
+<a href="#">Dla mamy</a>
+<a href="#">Dla babci</a>
+<a href="#">Dla taty</a>
+<a href="#">Na Baby shower</a>
+<a href="#">Na Walentynki</a><a href="#">Bon upominkowy</a></div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="op-h">
+<div class="wrap">
+<div class="shead"><div><h2 id="op-h">Opinie klientek</h2><p>24 opinie wystawione w sklepie tiamobojestes.pl, każda na 5 / 5.</p></div></div>
+<div class="ops" data-drag><figure class="op"><span class="st">5 / 5</span><p>„Jestem pod ogromnym wrażeniem, naprawdę. Zamawiam produkty hand made i biżuterię nie pierwszy raz, ale cała oprawa bransoletki przekroczyła moje oczekiwania. Piękne pudełko, grafika, jakość, detale.”</p><footer><b>Iga</b> · 04.02.2025 · Bransoletka Molly</footer></figure>
+<figure class="op"><span class="st">5 / 5</span><p>„Bransoletka jest cudowna. Dodatkowo przepięknie zapakowana, z dbałością o każdy szczegół. Nasza dedykacja została pięknie rozmieszczona na karteczce.”</p><footer><b>Agata</b> · 25.07.2022 · Bransoletka Florencja</footer></figure>
+<figure class="op"><span class="st">5 / 5</span><p>„Najpiękniejsza biżuteria, jaką kiedykolwiek na siebie założyłam.”</p><footer><b>Marta</b> · 11.05.2023 · Bransoletka zodiakalna Strzelec</footer></figure>
+<figure class="op"><span class="st">5 / 5</span><p>„Wykonana bardzo dokładnie, z dbałością o każdy szczegół. Realizacja zamówienia była ekspresowa, a przesyłka pięknie zapakowana.”</p><footer><b>Wiktoria</b> · 20.05.2022 · Bransoletka Blossom</footer></figure>
+<figure class="op"><span class="st">5 / 5</span><p>„Bransoletka jest piękna, bardzo delikatna i subtelna. Dostałam z okazji Dnia Matki od synka.”</p><footer><b>Ania</b> · 05.06.2022 · Bransoletka z sercem</footer></figure>
+<figure class="op"><span class="st">5 / 5</span><p>„Dostawa przebiegła bardzo szybko oraz sprawnie. Przyjechała starannie zapakowana. Bransoletka jest ładna i delikatna, nie czuć jej na ręce.”</p><footer><b>natalia1000</b> · 03.03.2023 · Bransoletka zodiakalna Skorpion</footer></figure></div>
+</div>
+</section>
+
+<section class="gray" aria-labelledby="dst-h">
+<div class="wrap">
+<div class="shead"><div><h2 id="dst-h">Dostawa i płatności</h2></div></div>
+<div class="info">
+<div><b>Paczkomat InPost</b><p class="v">14,50 zł</p><p>Odbiór w wybranym paczkomacie.</p></div>
+<div><b>Kurier InPost</b><p class="v">16 zł</p><p>Dostawa pod drzwi na terenie Polski.</p></div>
+<div><b>BLIK i szybkie płatności</b><p class="v">Przelewy24</p><p>Wpłata od razu, więc zamówienie szybciej rusza w drogę. Można też zapłacić zwykłym przelewem.</p></div>
+<div><b>Zwroty i reklamacje</b><p class="v">Zasady w regulaminie</p><p>Opisane krok po kroku na osobnej stronie sklepu.</p></div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="ab-h">
+<div class="wrap about">
+<div class="im"><img src="img/dar-480.webp" srcset="img/dar-480.webp 480w, img/dar-720.webp 720w" sizes="(min-width:900px) 40vw, 92vw" width="480" height="600" alt="Wręczanie prezentu w pudełku Tiamo" loading="lazy" decoding="async"></div>
+<div>
+<h2 id="ab-h">Ti amo po włosku znaczy „kocham Cię”</h2>
+<p>Taki przekaz niesie nasza biżuteria. Ma przypominać o miłości do siebie, o osobie, która ją podarowała, albo o ważnym momencie: zaręczynach, ślubie, rocznicy, urodzinach czy narodzinach dziecka.</p>
+<p>Każdą bransoletkę i każdy naszyjnik tworzymy ręcznie, z dbałością o najmniejsze detale, z kamieni naturalnych i eleganckich pereł. Podaruj ją sobie lub komuś, kogo kochasz, po prostu.</p>
+<p class="sig">Tiamo, bo jesteś.</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site">
+<div class="wrap">
+<div class="fgrid">
+<div class="flogo"><img src="img/logo-w-320.webp" width="345" height="320" alt="TIAMO - Tiamo, bo jesteś" loading="lazy"></div>
+<div><h3>Sklep</h3><ul><li><a href="#">Nowości</a></li><li><a href="#">Talizmany</a></li><li><a href="#">Naszyjniki</a></li><li><a href="#">Bransoletki</a></li><li><a href="#">Prezenty</a></li></ul></div>
+<div><h3>Informacje</h3><ul><li><a href="#">Formy płatności i dostawy</a></li><li><a href="#">Zwroty i reklamacje</a></li><li><a href="#">Regulamin</a></li><li><a href="#">Polityka prywatności</a></li></ul></div>
+<div><h3>Kontakt</h3><ul><li><a href="tel:+48660686700">+48 660 686 700</a></li><li><a href="mailto:biuro@tiamobojestes.pl">biuro@tiamobojestes.pl</a></li><li>Etiamo Monika Andrzejak-Markwitz</li><li>Poznań</li></ul></div>
+</div>
+<div class="fbot"><span>© 2026 TIAMO, bo jesteś</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=tiamobojestes.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+</div>
+</footer>
+
+<nav class="mnav" id="mnav" aria-label="Menu">
+<div class="hd"><a class="brand" href="#"><img src="img/mark-96.webp" width="34" height="34" alt=""><b>TIAMO</b></a><button class="x" type="button" data-close>Zamknij</button></div>
+<label class="search"><input type="search" placeholder="Szukaj w sklepie" aria-label="Szukaj w sklepie"></label>
+<a class="l" href="#">Nowości</a><a class="l" href="#">Talizmany</a><a class="l" href="#">Naszyjniki</a><a class="l" href="#">Bransoletki</a><a class="l" href="#">Kolczyki</a><a class="l" href="#">Prezenty</a><a class="l" href="#">Dla niego</a><a class="l" href="#">O nas</a><a class="l" href="#">Moje konto</a>
+<p>Paczkomat InPost 14,50 zł · kurier 16 zł · BLIK i szybkie płatności</p>
+</nav>
+
+<div class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cart-h">
+<div class="bg" data-close></div>
+<div class="pan">
+<div class="hd"><h2 id="cart-h">Koszyk</h2><button class="x" type="button" data-close>Zamknij</button></div>
+<ul class="items" id="items"><li class="empty">Koszyk jest pusty. Dodaj coś, co Ci się podoba.</li></ul>
+<div class="sum"><div><span>Produkty</span><span id="sp">0,00 zł</span></div><div><span>Dostawa (Paczkomat InPost)</span><span>14,50 zł</span></div><div class="t"><span>Razem</span><span id="st">0,00 zł</span></div>
+<button class="btn" type="button" id="kasa">Przejdź do kasy</button>
+<small id="kn">Płatność BLIK, Przelewy24 lub przelewem tradycyjnym.</small></div>
+</div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+var c=[],cnt=document.getElementById('cnt'),cb=document.getElementById('cbtn'),it=document.getElementById('items'),t=document.getElementById('toast'),tm;
+function f(v){return v.toFixed(2).replace('.',',')+' zł'}
+function r(){var n=0,s=0;c.forEach(function(x){n+=x.q;s+=x.q*x.p});cnt.textContent=n;cb.setAttribute('aria-label','Koszyk, liczba produktów: '+n);
+it.innerHTML=c.length?c.map(function(x){return '<li><img src="img/'+x.k+'-360.webp" alt="" width="64" height="80"><span>'+x.n+'<br><span class="q">'+x.q+' × '+f(x.p)+'</span></span><b>'+f(x.q*x.p)+'</b></li>'}).join(''):'<li class="empty">Koszyk jest pusty. Dodaj coś, co Ci się podoba.</li>';
+document.getElementById('sp').textContent=f(s);document.getElementById('st').textContent=f(s?s+14.5:0)}
+document.addEventListener('click',function(e){
+var a=e.target.closest('.add');if(a){var k=a.dataset.k,x=c.find(function(y){return y.k==k});if(x)x.q++;else c.push({k:k,n:a.dataset.n,p:+a.dataset.p,q:1});r();
+a.classList.add('ok');a.textContent='Dodano';setTimeout(function(){a.classList.remove('ok');a.textContent='Do koszyka'},1400);
+t.textContent='Dodano do koszyka: '+a.dataset.n;t.classList.add('on');clearTimeout(tm);tm=setTimeout(function(){t.classList.remove('on')},2200);return}
+var o=e.target.closest('[data-open]');if(o){document.getElementById(o.dataset.open).classList.add('open');document.body.style.overflow='hidden';return}
+if(e.target.closest('[data-close]')){document.querySelectorAll('.open').forEach(function(m){m.classList.remove('open')});document.body.style.overflow='';return}
+if(e.target.id=='kasa'){document.getElementById('kn').textContent='To podgląd. W gotowym sklepie tu otwiera się kasa z BLIK i Przelewy24.'}
+var l=e.target.closest('a[href="#"]');if(l)e.preventDefault();
+});
+if(matchMedia('(hover:hover) and (pointer:fine)').matches){addEventListener('load',function(){setTimeout(function(){document.querySelectorAll('img.alt').forEach(function(i){i.srcset=i.dataset.srcset;i.src=i.dataset.src;i.hidden=false})},1500)})}
+document.addEventListener('keydown',function(e){if(e.key=='Escape'){document.querySelectorAll('.open').forEach(function(m){m.classList.remove('open')});document.body.style.overflow=''}});
+document.querySelectorAll('[data-drag]').forEach(function(el){var d=0,x0,s0,mv;el.addEventListener('pointerdown',function(e){if(e.pointerType!='mouse')return;d=1;mv=0;x0=e.clientX;s0=el.scrollLeft;el.style.scrollSnapType='none'});
+window.addEventListener('pointermove',function(e){if(!d)return;var dx=e.clientX-x0;if(Math.abs(dx)>4)mv=1;el.scrollLeft=s0-dx});
+window.addEventListener('pointerup',function(){if(!d)return;d=0;el.style.scrollSnapType=''});
+el.addEventListener('click',function(e){if(mv){e.preventDefault();e.stopPropagation();mv=0}},true);el.addEventListener('dragstart',function(e){e.preventDefault()})});
+})();
+</script>
+</body>
+</html>
